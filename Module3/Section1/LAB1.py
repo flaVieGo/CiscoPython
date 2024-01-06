@@ -15,3 +15,5 @@
 
 n = int(input("Enter a number, anyone: "))
 print(n >= 100)
+
+#Finished
