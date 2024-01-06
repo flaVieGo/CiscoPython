@@ -20,6 +20,6 @@ complete_hours = dura // 60
 remains_mins = dura % 60
 
 mins = (mins + remains_mins) % 60
-hour += complete_hours + ((mins + remains_mins) % 60)
+hour += complete_hours + ((mins + remains_mins) // 60)
 print(hour, ":", mins)
 
