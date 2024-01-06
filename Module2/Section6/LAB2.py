@@ -29,3 +29,5 @@ print(remains_hours)
 hour = remains_hours
 
 print("the end of the event will occour in ", hour, ":", mins)
+
+#Finished
