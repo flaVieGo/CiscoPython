@@ -22,10 +22,10 @@ remains_mins = dura % 60
 
 mins = (mins + remains_mins) % 60
 hour += complete_hours + ((mins + remains_mins) // 59)
-print(hour, ":", mins)
+#print(hour, ":", mins)
 
 remains_hours = hour % 24
-print(remains_hours)
+#print(remains_hours)
 hour = remains_hours
 
 print("the end of the event will occour in ", hour, ":", mins)
