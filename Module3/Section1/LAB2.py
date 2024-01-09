@@ -19,3 +19,11 @@
 # INPUT DATA    pelargonium         EXPECTED OUTPUT     Spathiphyllum! Not pelargonium!
 # INPUT DATA    Spathiphyllum       EXPECTED OUTPUT     Yes - Spathiphyllum is the best plant ever!
 
+flower = input("Say the name of the best flower ever\n")
+
+if flower == "spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+elif flower == "Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever!")
+else:
+    print("Spathiphyllum! Not ", flower,"!")
