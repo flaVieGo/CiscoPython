@@ -15,7 +15,7 @@
 
 # The magician is counting on you! Don't disappoint him.
 
-#   EXTRA INFO  
+#       EXTRA INFO  
 # By the way, look at the print() function. The way we've used it here is called multi-line printing. 
 # You can use triple quotes to print strings on multiple lines in order to make text easier to read, or create a special text-based design. Experiment with it.
 
