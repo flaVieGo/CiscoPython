@@ -18,7 +18,13 @@
 # INPUT DATA    2       EXPECTED OUTPUT     The height of the pyramid: 1  
 
 blocks = int(input("Enter the number of blocks: "))
-
+i = 1
 # Write your code here.
+while i != blocks:
+    
 
+
+
+    height = 0
+    i += 1
 print("The height of the pyramid:", height)
