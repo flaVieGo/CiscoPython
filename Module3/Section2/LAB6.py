@@ -20,11 +20,8 @@
 blocks = int(input("Enter the number of blocks: "))
 i = 1
 # Write your code here.
-while i != blocks:
-    
-
-
-
-    height = 0
+while blocks >= i:
+    blocks = blocks - i
     i += 1
+height = i-1
 print("The height of the pyramid:", height)
