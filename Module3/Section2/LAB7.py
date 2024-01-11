@@ -20,7 +20,7 @@
 
 # TEST DATA
 # INPUT DATA    15      EXPECTED OUTPUT     46
-#                                           46
+#                                           46      expected output used in plataform is wrong, real answer is 23
 #                                           70
 #                                           35
 #                                           106
@@ -43,65 +43,104 @@
 #                                           1
 #                                           steps = 4
 # INPUT DATA    1023    EXPECTED OUTPUT     3070
-# 1535
-# 4606
-# 2303
-# 6910
-# 3455
-# 10366
-# 5183
-# 15550
-# 7775
-# 23326
-# 11663
-# 34990
-# 17495
-# 52486
-# 26243
-# 78730
-# 39365
-# 118096
-# 59048
-# 29524
-# 14762
-# 7381
-# 22144
-# 11072
-# 5536
-# 2768
-# 1384
-# 692
-# 346
-# 173
-# 173
-# 260
-# 130
-# 65
-# 196
-# 98
-# 49
-# 148
-# 74
-# 37
-# 37
-# 56
-# 28
-# 14
-# 7
-# 22
-# 11
-# 34
-# 17
-# 52
-# 26
-# 13
-# 40
-# 20
-# 10
-# 5
-# 16
-# 8
-# 4
-# 2
-# steps = 62
-    
+#                                           1535
+#                                           4606
+#                                           2303
+#                                           6910
+#                                           3455
+#                                           10366
+#                                           5183
+#                                           15550
+#                                           7775
+#                                           23326
+#                                           11663
+#                                           34990
+#                                           17495
+#                                           52486
+#                                           26243
+#                                           78730
+#                                           39365
+#                                           118096
+#                                           59048
+#                                           29524
+#                                           14762
+#                                           7381
+#                                           22144
+#                                           11072
+#                                           5536
+#                                           2768
+#                                           1384
+#                                           692
+#                                           346
+#                                           173
+#                                           173     expected output used in plataform is wrong, real answer is 520
+#                                           260
+#                                           130
+#                                           65
+#                                           196
+#                                           98
+#                                           49
+#                                           148
+#                                           74
+#                                           37      
+#                                           37      expected output used in plataform is wrong, real answer is 112
+#                                           56
+#                                           28
+#                                           14
+#                                           7
+#                                           22
+#                                           11
+#                                           34
+#                                           17
+#                                           52
+#                                           26
+#                                           13
+#                                           40
+#                                           20
+#                                           10
+#                                           5
+#                                           16
+#                                           8
+#                                           4
+#                                           2       expected output don't show the 1 in this example, an error
+#                                           steps = 62
+
+#proposed code
+# c0 = int(input("Enter with a natural number, except 0: "))
+# steps = 0
+# while True:
+#     if c0 == 1:
+#         #print(c0)
+#         print("steps:", steps)
+#         break
+#     else:
+#         if c0 % 2 == 0:     # even number
+#             c0 = c0/2
+#             print(int(c0))
+#             steps += 1
+#         else:               # odd number
+#             c0 = 3 * c0 + 1
+#             print(int(c0))
+#             steps += 1
+
+#a little beyond code
+low_loop = int(input("Enter with the first hypothesis test number: "))
+high_loop = int(input("Enter with the upper hypothesis test number: ")) + 1
+i = low_loop
+steps = 0
+
+for i in range(low_loop, high_loop):
+    c0 = i
+    while True:
+        if c0 == 1:
+            # print("steps:", steps)
+            break
+        else:
+            if c0 % 2 == 0:     # even number
+                c0 = c0/2
+                steps += 1
+            else:               # odd number
+                c0 = 3 * c0 + 1
+                steps += 1
+    print("number of steps for the number", i, "is", steps)
+    steps = 0
