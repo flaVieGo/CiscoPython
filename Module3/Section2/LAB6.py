@@ -25,3 +25,4 @@ while blocks >= i:
     i += 1
 height = i-1
 print("The height of the pyramid:", height)
+print("The number of blocks left:", blocks)
