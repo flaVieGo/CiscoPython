@@ -106,41 +106,41 @@
 #                                           steps = 62
 
 #proposed code
-# c0 = int(input("Enter with a natural number, except 0: "))
-# steps = 0
-# while True:
-#     if c0 == 1:
-#         #print(c0)
-#         print("steps:", steps)
-#         break
-#     else:
-#         if c0 % 2 == 0:     # even number
-#             c0 = c0/2
-#             print(int(c0))
-#             steps += 1
-#         else:               # odd number
-#             c0 = 3 * c0 + 1
-#             print(int(c0))
-#             steps += 1
+c0 = int(input("Enter with a natural number, except 0: "))
+steps = 0
+while True:
+    if c0 == 1:
+        #print(c0)
+        print("steps:", steps)
+        break
+    else:
+        if c0 % 2 == 0:     # even number
+            c0 = c0/2
+            print(int(c0))
+            steps += 1
+        else:               # odd number
+            c0 = 3 * c0 + 1
+            print(int(c0))
+            steps += 1
+
 
 #a little beyond code
-low_loop = int(input("Enter with the first hypothesis test number: "))
-high_loop = int(input("Enter with the upper hypothesis test number: ")) + 1
-i = low_loop
-steps = 0
+# low_loop = int(input("Enter with the first hypothesis test number: "))
+# high_loop = int(input("Enter with the upper hypothesis test number: ")) + 1
+# i = low_loop
+# steps = 0
 
-for i in range(low_loop, high_loop):
-    c0 = i
-    while True:
-        if c0 == 1:
-            # print("steps:", steps)
-            break
-        else:
-            if c0 % 2 == 0:     # even number
-                c0 = c0/2
-                steps += 1
-            else:               # odd number
-                c0 = 3 * c0 + 1
-                steps += 1
-    print("number of steps for the number", i, "is", steps)
-    steps = 0
+# for i in range(low_loop, high_loop):
+#     c0 = i
+#     while True:
+#         if c0 == 1:
+#             break
+#         else:
+#             if c0 % 2 == 0:     # even number
+#                 c0 = c0/2
+#                 steps += 1
+#             else:               # odd number
+#                 c0 = 3 * c0 + 1
+#                 steps += 1
+#     print("number of steps for the number", i, "is", steps)
+#     steps = 0
