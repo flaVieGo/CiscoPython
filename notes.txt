@@ -1,0 +1,48 @@
+Link skills for all: https://skillsforall.com/dashboard
+
+Notes - Section 4: Lists
+
+Functions vs Methods:
+
+    A method is a specific kind of function ‒ it behaves like a function and looks like a function, but differs in the way in which it acts, and in its invocation style.
+    A function doesn't belong to any data ‒ it gets data, it may create new data and it (generally) produces a result.
+    A method does all these things, but is also able to change the state of a selected entity.
+    A method is owned by the data it works for, while a function is owned by the whole code.
+    This also means that invoking a method requires some specification of the data from which the method is invoked.
+    It may sound puzzling here, but we'll deal with it in depth when we delve into object-oriented programming.
+    In general, a typical function invocation may look like this:
+
+        result = function(arg)
+
+    The function takes an argument, does something, and returns a result.
+    A typical method invocation usually looks like this:
+
+        result = data.method(arg)
+
+    Note: the name of the method is preceded by the name of the data which owns the method. Next, you add a dot, followed by the method name, and a pair of parenthesis enclosing the arguments.
+    The method will behave like a function, but can do something more ‒ it can change the internal state of the data from which it has been invoked.
+    You may ask: why are we talking about methods, not about lists?
+    This is an essential issue right now, as we're going to show you how to add new elements to an existing list. This can be done with methods owned by all the lists, not by functions.
+
+Commands in lists:
+
+    function - len(): return number of elements in the list.
+        Ex.: print("\nList length:", len(numbers))
+    instruction - del: remove itens in the list by the index.
+        Ex.: del numbers[1]
+    method - append(): add a new list element in the last position.
+        Ex.: numbers.append(value)
+    method - insert: add a new list element, but in a especific position
+        Ex.: numbers.insert(location, value)
+    
+
+Negative index in lists:
+
+    you can point to the last element in a list using the -1 index.
+        Ex.: print(numbers[-1])
+    in the case of -2, will interact with the before last. If the negative index are bigger than the list lenght, a out of list range error will appear.
+
+
+    
+
+    
