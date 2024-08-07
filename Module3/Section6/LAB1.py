@@ -16,8 +16,25 @@
 #  Given code:
 
 my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
-#
 # Write your code here.
+my_list.sort()
+print(my_list)
+exclusiveList = my_list[:1]
+print(exclusiveList)
+
+# for i in range(len(my_list)):
+#     print(my_list[i])
+#     if my_list[i] not in exclusiveList:
+#         exclusiveList.append(my_list[i])
+#         print(exclusiveList)
+
+for i in my_list:
+    print(i)
+    if i not in exclusiveList:
+        exclusiveList.append(i)
+        print(exclusiveList)
+
+my_list = exclusiveList[:]
 #
 print("The list with unique elements only:")
 print(my_list)
