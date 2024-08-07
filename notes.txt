@@ -32,8 +32,14 @@ Commands in lists:
         Ex.: del numbers[1]
     method - append(): add a new list element in the last position.
         Ex.: numbers.append(value)
-    method - insert: add a new list element, but in a especific position
+    method - insert: add a new list element, but in a especific position.
         Ex.: numbers.insert(location, value)
+    method - sort(): order a list in a increasing or decreasing way.
+        Ex.: numbers.sort()
+    method - reverse(): swat the order of the list elements, first became the last and vice-versa.
+        Ex.: numbers.reverse()
+    
+
     
 
 Negative index in lists:
